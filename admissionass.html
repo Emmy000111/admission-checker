@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body {
+            background-color: blue;
+        }
+        .tablee {
+            width: 500px;
+            height: 200px;
+            margin-top: 300px;
+            border-radius: 30px;
+            border-color: coral;
+        }
+        .inputt {
+            width: 300px;
+            height: 30px;
+            border-radius: 30px;
+            border-color: red;
+        
+        }
+        
+    </style>
+    <center>
+        <table class="tablee" border="5">
+            <tr>
+                <td >Math</td>
+                <td> <input type="number" name="" class="inputt" id="math"></td>
+            </tr>
+            <tr>
+                <td>Eng</td>
+                <td> <input type="number" name="" class="inputt" id="eng"></td>
+            </tr>
+            <tr>
+                <td>Jamb Score</td>
+                <td> <div id="div"></div></td>
+            </tr>
+        </table>
+        <button onclick="btn()" >Check Admission Status</button>
+    </center>
+    <script>
+        function btn() {
+            if ( math.value + eng.value < 60) 
+           alert ("hello")
+        }
+    </script>
+    
+</body>
+</html>
